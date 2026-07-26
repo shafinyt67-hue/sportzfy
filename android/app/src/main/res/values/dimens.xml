@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_card">20dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="margin_standard">12dp</dimen>
+    <dimen name="icon_standard">24dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+</resources>

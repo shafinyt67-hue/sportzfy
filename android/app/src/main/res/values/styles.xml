@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CardContainerStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">6dp</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
+    </style>
+</resources>

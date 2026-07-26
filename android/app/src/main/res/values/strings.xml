@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StreamPlayer</string>
+    <string name="approved">Approved</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="retry">Retry</string>
+    <string name="play">Play</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
