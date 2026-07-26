@@ -1,0 +1,22 @@
+Android XML layout mapping reference:
+
+- activity_splash.xml
+- activity_main.xml
+- activity_player.xml
+- activity_network_stream.xml
+- activity_playlist.xml
+- activity_channel.xml
+- activity_settings.xml
+- activity_notice.xml
+- fragment_home.xml
+- fragment_categories.xml
+- fragment_highlights.xml
+- item_match.xml
+- item_playlist.xml
+- item_channel.xml
+- item_category.xml
+- item_drawer.xml
+- dialog_add_playlist.xml
+- dialog_exit.xml
+- dialog_notice.xml
+- dialog_crash.xml

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0d0d0d;
+  --color-bgsoft: #121212;
+  --color-card: #171717;
+  --color-cardhover: #222020;
+  --color-accent: #c8102e;
+  --color-accentdark: #8f0a20;
+  --color-divider: #30282a;
+  --color-textsecondary: #bcb6b7;
+  --font-sans: "Inter", "Roboto", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at 80% -10%, rgba(200, 16, 46, 0.15), transparent 31rem), var(--color-bg);
+  color: #ffffff;
+  overscroll-behavior-y: none;
+}
+
+button, input, select, textarea { font: inherit; }
+button { touch-action: manipulation; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #e54b62;
+  outline-offset: 3px;
+}
+
+.premium-surface {
+  background: linear-gradient(145deg, rgba(38, 31, 32, .9), rgba(23, 23, 23, .96));
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 12px 32px rgba(0,0,0,.28), inset 0 1px rgba(255,255,255,.035);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-divider);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadein {
+  animation: fadein 0.6s ease forwards;
+}
+
+@keyframes toastin {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.animate-toastin {
+  animation: toastin 0.25s ease forwards;
+}
+
+@keyframes drawerin {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animate-drawerin {
+  animation: drawerin 0.28s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes scalein {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-scalein {
+  animation: scalein 0.18s ease forwards;
+}
+
+@keyframes shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+.animate-shimmer { background: linear-gradient(100deg, #171717 30%, #2b2526 50%, #171717 70%); background-size: 200% 100%; animation: shimmer 1.4s infinite linear; }
+@keyframes risein { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.animate-risein { animation: risein .42s cubic-bezier(.2,.8,.2,1) both; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+/* Legacy screen tokens are deliberately remapped here so every existing screen
+   inherits the premium system without changing its routes or behaviour. */
+.bg-\[\#111827\], .bg-\[\#0d1420\], .bg-\[\#0B1220\] { background-color: #0d0d0d !important; }
+.bg-\[\#1B2432\] { background-color: #171717 !important; }
+.bg-\[\#212c3d\] { background-color: #242020 !important; }
+.border-\[\#2A3445\] { border-color: rgba(255,255,255,.09) !important; }
+.text-\[\#00BCD4\] { color: #f05468 !important; }
+.bg-\[\#00BCD4\] { background-color: #c8102e !important; }
+.border-\[\#00BCD4\]\/50, .border-\[\#00BCD4\]\/60 { border-color: rgba(240,84,104,.55) !important; }
+.shadow-cyan-950\/50 { --tw-shadow-color: rgba(70, 0, 12, .5) !important; }
+.accent-\[\#00BCD4\] { accent-color: #c8102e !important; }

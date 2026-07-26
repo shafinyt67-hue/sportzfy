@@ -1,0 +1,1 @@
+Player UI and controls are implemented in `src/screens/PlayerScreen.tsx`.

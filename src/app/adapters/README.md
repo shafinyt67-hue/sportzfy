@@ -1,0 +1,1 @@
+This web build maps RecyclerView adapters to React list components under `src/screens` and `src/components`.

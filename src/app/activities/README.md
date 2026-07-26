@@ -1,0 +1,1 @@
+This web build maps Android Activities to top-level routed screens in `src/screens`.

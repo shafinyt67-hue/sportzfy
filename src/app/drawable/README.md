@@ -1,0 +1,1 @@
+This web build uses inline SVG/icons and CSS backgrounds instead of Android drawable resources.

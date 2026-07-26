@@ -1,0 +1,24 @@
+export default function Logo({ size = 44 }: { size?: number }) {
+  return (
+    <div
+      style={{ width: size, height: size }}
+      className="relative flex items-center justify-center rounded-2xl bg-gradient-to-br from-[#00BCD4] to-[#0891A8] shadow-lg shadow-cyan-950/40 shrink-0"
+    >
+      <svg
+        width={size * 0.58}
+        height={size * 0.58}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#0B1220"
+        strokeWidth={2.2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9" />
+        <path d="M12 3c-2.5 2.5-3.5 5.5-3.5 9s1 6.5 3.5 9" />
+        <path d="M3 12h18" />
+      </svg>
+    </div>
+  );
+}
